@@ -60,7 +60,7 @@ a {
     left: 120px
   }
   
-  #black-background {
+   #black-background {
     background-color: black;
     position: absolute;
     top: 1372px;
@@ -68,7 +68,7 @@ a {
     width: 1200px;
     padding-top: 50px;
     padding-bottom: 50px;
-    height: 1372px;
+    height: 1000px;
 }
    
   #contact {
@@ -125,6 +125,22 @@ a {
 .socials img {
   display: inline-block;
 }
+
+  
+.column-left-content {
+    margin: 50px;
+    width: 40%; /* Slightly less than 50% for space */
+    float: left;
+    margin-left: 0;
+}
+.column-right-content {
+    margin: 50px;
+    width: 40%; /* Slightly less than 50% for space */
+    float: right; /* Float right to sit beside the left column */
+    margin-right: 0;
+
+}
+
   
 h1 {
   color: white;
@@ -133,22 +149,57 @@ h1 {
   text-align: center;
   font-weight: normal;
   }
-h2 {
-  color: black;
-  font-size: 50px;
-  font-family: "Instrument Sans", sans-serif;
-  text-align: left;
-  margin-top: 0;
-  font-weight: normal;
+h2 { 
+    color: white;
+    font-size: 50px;
+    font-family: "Instrument Sans", sans-serif;
+    text-align: center;
+    background-color: black; 
+    padding: 10px 0;
+    margin-bottom: 20px;
+    margin-top: 0; /* Important: removes top spacing */
+    font-weight: normal;
+}
+.work-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px;
+    
+}
+.work-list li {
+    display: list-item;
+    color: black;
+    font-size: 24px;
+    font-family: "Instrument Sans", sans-serif;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+.dates {
+    color: black;
+    font-size: 24px;
+    font-family: "Instrument Sans", sans-serif;
+    text-align: left;
+    margin: 5px;
+     margin-left: 50px;
+
+}
+.company {
+    color: black;
+    font-size: 24px;
+    font-family: "Instrument Sans", sans-serif;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 50px;
+}
+  p {
+    margin-left: 50px;
+    font-size: 24px;
+    font-family: "Instrument Sans", sans-serif;
+    text-align: left;
+
   }
-  
-h3 {
-  color: black;
-  font-size: 24px;
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: normal;
-  }
- 
+
   </style>
 </head>
 <body>
@@ -167,8 +218,57 @@ h3 {
   
 <!-- BACKGROUND -->
   <div class="background">
+    
+    <div class="resume-layout"> 
+
+        <div class="column-left-content">
+            
+            <h2>Education</h2>
+            <div class="education-details">
+                <p class="dates">Present</p>
+                <p class="company">University of Waterloo: GBDA</p>
+                <p>Global Business & Digital Arts</p>
+                <p>Specializing in marketing and media</p>
+            </div>
+            
+            <h2 style="margin-top: 30px;">Projects</h2> <h3 class="company">Emotion Short Film</h3>
+            <p class="dates">Director, Camera Operator, Music Supervisor</p>
+            <ul class="work-list">
+                <li>Directed and produced a dialogue-free short film using visual storytelling and curated soundtrack to evoke emotion, showcasing music’s role in narrative, branding, and audience response.</li>
+            </ul>
+            
+            <h3 class="company">Senate Social Media Campaign</h3>
+            <p class="dates">Content Creator, marketer, social media manager</p>
+            <ul class="work-list">
+                <li>Created and managed a student-focused social media campaign for the Waterloo Catholic District School Board, driving engagement through targeted content and platform strategy.</li>
+            </ul>
+        </div>
+        
+        <div class="column-right-content">
+            
+            <h2>Work Experiences</h2>
+            
+            <p class="dates">2023 - 2024</p>
+            <h3 class="company">School Board Trustee | Waterloo Catholic District School Board</h3>
+            <ul class="work-list">
+                <li>Advocated for 40,000+ students by drafting and presenting motions focused on equity, mental health, and engagement; contributed to strategic policy updates</li>
+                <li>Delivered persuasive presentations to trustees and community leaders; built stakeholder trust and influenced board-wide decisions</li>
+                <li>Led student consultations and public outreach; translated feedback into actionable proposals and strengthened relationships with educators and families</li>
+            </ul>
+
+            <p class="dates">2022 - 2023</p>
+            <h3 class="company">Assistant House Manager | St. Jacobs Country Playhouse (Co-op)</h3>
+            <ul class="work-list">
+                <li>Managed front-of-house operations during live performances; ensured a safe, welcoming environment and upheld brand standards under pressure</li>
+                <li>Assisted with promotional events and audience engagement; contributed to positive guest experiences and increased repeat attendance</li>
+                <li>Trained and supported new staff and volunteers; reinforced service excellence and gathered feedback to improve future programming</li>
+            </ul>
+            
+        </div>
+
     </div>
-  
+    
+</div>
 <!-- BLACK BACKGROUND -->
    <div id="black-background">
      <div id="contact">
